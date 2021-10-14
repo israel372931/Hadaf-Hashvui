@@ -24,5 +24,10 @@ namespace Hadaf_Hashvui
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
     }
 }

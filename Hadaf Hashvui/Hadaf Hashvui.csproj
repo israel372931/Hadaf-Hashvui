@@ -7,4 +7,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="HadafHashvuiLogo %281%29.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="HadafHashvuiLogo (1).webp" />
+  </ItemGroup>
+
 </Project>

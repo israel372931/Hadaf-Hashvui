@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="#FFE8E4E4" Offset="0.846"/>
+                <GradientStop Color="#FF58AEA3"/>
+                <GradientStop Color="#FFA1AEAD" Offset="0.404"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="בס&quot;ד" HorizontalAlignment="Left" Margin="752,10,0,0" VerticalAlignment="Top"/>
+        <Grid Margin="234,50,234,293" Width="350">
+            <Label  Content="מערכת ניהול הדף השבועי"  FontSize="40" FontFamily="BN 88 Fingers"/>
+        </Grid>
+        <TextBox HorizontalAlignment="Center" Text="שם משתמש" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="272" Margin="0,167,0,0" TextAlignment="Center" FontSize="30" Foreground="#FFA6A7AB"/>
+        <TextBox HorizontalAlignment="Center" Text="סיסמה" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="272" TextAlignment="Center" FontSize="30" Foreground="#FFA6A7AB" Margin="0,247,0,0" Background="White"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,352,0,0" Text="כניסה" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="28" FontSize="20" TextAlignment="Center" Background="#FFADADAD" TextChanged="TextBox_TextChanged"/>
 
     </Grid>
 </Window>
