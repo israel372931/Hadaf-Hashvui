@@ -4,9 +4,16 @@ using System.Text;
 
 namespace Hadaf_Hashvui
 {
-    class person
+    public class person
     {
-        private int id;
-        private int age;
+        private string id;
+        private string fullName;
+
+        public person(string id, string name)
+        {
+            this.id = id;
+            this.fullName = name;
+        }
     }
+
 }
