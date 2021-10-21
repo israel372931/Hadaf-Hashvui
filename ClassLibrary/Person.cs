@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Hadaf_Hashvui
+namespace ClassLibrary
 {
-    public class person
+    public class Person
     {
         private string id;
         private string fullName;
 
-        public person(string id, string name)
+        public Person() { }
+
+        public Person(string id, string name)
         {
             this.id = id;
             this.fullName = name;
         }
-    }
 
+    }
 }

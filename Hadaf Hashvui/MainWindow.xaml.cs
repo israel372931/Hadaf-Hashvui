@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using ClassLibrary;
 namespace Hadaf_Hashvui
 {
     /// <summary>
@@ -29,5 +29,12 @@ namespace Hadaf_Hashvui
         {
             
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Employee e1 = new Employee("", "", userName.Text, password.Text);
+        }
+
+
     }
 }
