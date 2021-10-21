@@ -20,7 +20,6 @@ namespace ClassLibrary
             this.userName = userName;
             this.password = passWord;
         }
-        //123//
 
     }
 }
