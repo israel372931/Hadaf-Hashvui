@@ -21,10 +21,10 @@
             <Label  Content="מערכת ניהול הדף השבועי"  FontSize="40" FontFamily="BN 88 Fingers"/>
         </Grid>
         <TextBox x:Name="userName" HorizontalAlignment="Center" Text="שם משתמש" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="272" Margin="0,167,0,0" TextAlignment="Center" FontSize="30" Foreground="#FFA6A7AB"/>
-        <TextBox x:Name="password" HorizontalAlignment="Center" Text="סיסמה" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="272" TextAlignment="Center" FontSize="30" Foreground="#FFA6A7AB" Margin="0,247,0,0" Background="White" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox x:Name="password" HorizontalAlignment="Center" Text="סיסמה" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="272" TextAlignment="Center" FontSize="30" Foreground="#FFA6A7AB" Margin="0,247,0,0" Background="White"/>
         <Button HorizontalAlignment="Center" Margin="0,352,0,0"  VerticalAlignment="Top" Width="72" Height="28" FontSize="20" Background="#FFADADAD" Content="כניסה" Click="Button_Click" />
         <Button Content="משתמש חדש" HorizontalAlignment="Left" Margin="264,319,0,0" VerticalAlignment="Top" Height="26" Width="79" BorderBrush="{x:Null}" Background="{x:Null}"/>
-        <Button Content="שכחתי סיסמה" HorizontalAlignment="Left" Margin="456,319,0,0" VerticalAlignment="Top" Height="26" Width="80" BorderBrush="{x:Null}" Click="Button_Click_1" Foreground="Red" Background="{x:Null}"/>
+        <Button Content="שכחתי את סיסמה" HorizontalAlignment="Left" Margin="456,319,0,0" VerticalAlignment="Top" Height="26" Width="80" BorderBrush="{x:Null}" Click="Button_Click_1" Foreground="Red" Background="{x:Null}"/>
 
     </Grid>
 </Window>
