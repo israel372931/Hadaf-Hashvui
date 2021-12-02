@@ -21,6 +21,7 @@ namespace ClassLibrary
         public IMongoCollection<BsonDocument> getCollectionByName(string nameColl)
         {
             return db.GetCollection<BsonDocument>(nameColl);
+
         }
     }
 }
