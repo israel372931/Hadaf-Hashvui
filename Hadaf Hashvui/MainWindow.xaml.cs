@@ -35,6 +35,9 @@ namespace Hadaf_Hashvui
             Employee e1 = new Employee("", "", userName.Text, password.Text);
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
 
+        }
     }
 }
