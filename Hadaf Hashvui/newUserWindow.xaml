@@ -1,0 +1,38 @@
+﻿<Window x:Class="Hadaf_Hashvui.newUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hadaf_Hashvui"
+        mc:Ignorable="d"
+        Title="newUserWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="#FFE8E4E4" Offset="0.846"/>
+                <GradientStop Color="#FF58AEA3"/>
+                <GradientStop Color="#FFA1AEAD" Offset="0.404"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="בס&quot;ד" HorizontalAlignment="Left" Margin="752,10,0,0" VerticalAlignment="Top"/>
+        <Grid Margin="200,50,200,293" Width="400">
+            <Label  Content="משתמש חדש"  FontSize="40" FontFamily="BN 88 Fingers" HorizontalAlignment="Center"/>
+        </Grid>
+        <TextBox x:Name="name" HorizontalAlignment="Center" Margin="0,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="40" TextAlignment="Right" FontSize="26"/>
+        <TextBox x:Name="id" HorizontalAlignment="Center" Margin="0,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="40" TextAlignment="Right" FontSize="26"/>
+        <TextBox x:Name="username" HorizontalAlignment="Center" Margin="0,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="40" TextAlignment="Right" FontSize="26"/>
+        <TextBox x:Name="password" HorizontalAlignment="Center" Margin="0,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="40" TextAlignment="Right" FontSize="26"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="40" TextAlignment="Right" FontSize="26"/>
+        <Label Content="שם" HorizontalAlignment="Left" Margin="468,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="מספר זהות" HorizontalAlignment="Left" Margin="428,150,0,0" VerticalAlignment="Top"/>
+        <Label Content="שם משתשמש" HorizontalAlignment="Left" Margin="412,210,0,0" VerticalAlignment="Top"/>
+        <Label Content="סיסמה" HorizontalAlignment="Left" Margin="452,270,0,0" VerticalAlignment="Top"/>
+        <Label Content="אימות סיסמה" HorizontalAlignment="Left" Margin="418,330,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="newUserButton" Content="יצירת משתמש" HorizontalAlignment="Center" Margin="0,400,0,0" VerticalAlignment="Top" Height="20" Width="96" Click="newUserButton_Click"/>
+
+
+
+    </Grid>
+</Window>

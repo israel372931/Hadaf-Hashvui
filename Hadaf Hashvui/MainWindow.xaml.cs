@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ClassLibrary;
+using MongoDB.Bson;
+
 namespace Hadaf_Hashvui
 {
     /// <summary>
@@ -25,19 +27,40 @@ namespace Hadaf_Hashvui
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+
+        private  async void enter_Click(object sender, RoutedEventArgs e)
         {
-            
+            Employee e1 = new Employee(username.Text, password.Text);
+            BsonDocument test = await Task.FromResult(e1.getEmployeeDetailsDocByName()).Result;
+            if(test == null)
+            {
+                error.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                Window1 w1 = new Window1();
+                w1.Show();
+            }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void username_GotFocus(object sender, RoutedEventArgs e)
         {
-            Employee e1 = new Employee("", "", userName.Text, password.Text);
+            TextBox tb = (TextBox)sender;
+            tb.Text = string.Empty;
+            tb.GotFocus -= username_GotFocus;
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        public void password_GotFocus(object sender, RoutedEventArgs e)
         {
+            TextBox tb = (TextBox)sender;
+            tb.Text = string.Empty;
+            tb.GotFocus -= password_GotFocus;
+        }
 
+        private void newUser_Click(object sender, RoutedEventArgs e)
+        {
+            newUserWindow newUser = new newUserWindow();
+            newUser.Show();
         }
     }
 }

@@ -17,14 +17,15 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Label Content="בס&quot;ד" HorizontalAlignment="Left" Margin="752,10,0,0" VerticalAlignment="Top"/>
-        <Grid Margin="234,50,234,293" Width="350">
-            <Label  Content="מערכת ניהול הדף השבועי"  FontSize="40" FontFamily="BN 88 Fingers"/>
+        <Grid Margin="200,50,200,293" Width="400">
+            <Label  Content="מערכת ניהול הדף השבועי"  FontSize="40" FontFamily="BN 88 Fingers" HorizontalAlignment="Center"/>
         </Grid>
-        <TextBox x:Name="userName" HorizontalAlignment="Center" Text="שם משתמש" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="272" Margin="0,167,0,0" TextAlignment="Center" FontSize="30" Foreground="#FFA6A7AB"/>
-        <TextBox x:Name="password" HorizontalAlignment="Center" Text="סיסמה" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="272" TextAlignment="Center" FontSize="30" Foreground="#FFA6A7AB" Margin="0,247,0,0" Background="White"/>
-        <Button HorizontalAlignment="Center" Margin="0,352,0,0"  VerticalAlignment="Top" Width="72" Height="28" FontSize="20" Background="#FFADADAD" Content="כניסה" Click="Button_Click" />
-        <Button Content="משתמש חדש" HorizontalAlignment="Left" Margin="264,319,0,0" VerticalAlignment="Top" Height="26" Width="79" BorderBrush="{x:Null}" Background="{x:Null}"/>
-        <Button Content="שכחתי את סיסמה" HorizontalAlignment="Left" Margin="456,319,0,0" VerticalAlignment="Top" Height="26" Width="80" BorderBrush="{x:Null}" Click="Button_Click_1" Foreground="Red" Background="{x:Null}"/>
+        <TextBox x:Name="username" HorizontalAlignment="Center" Text="שם משתמש" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="272" Margin="0,167,0,0" TextAlignment="Center" FontSize="30" Foreground="#FFA6A7AB" GotFocus="username_GotFocus"/>
+        <TextBox x:Name="password" HorizontalAlignment="Center" Text="סיסמה" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="272" TextAlignment="Center" FontSize="30" Foreground="#FFA6A7AB" Margin="0,247,0,0" Background="White" GotFocus="password_GotFocus"/>
+        <Button x:Name="enter" HorizontalAlignment="Center" Margin="0,352,0,0"  VerticalAlignment="Top" Width="72" Height="28" FontSize="20" Background="#FFADADAD" Content="כניסה" Click="enter_Click" />
+        <Button x:Name="newUser" Content="משתמש חדש" HorizontalAlignment="Left" Margin="264,319,0,0" VerticalAlignment="Top" Height="26" Width="79" BorderBrush="{x:Null}" Background="{x:Null}" Click="newUser_Click"/>
+        <Button x:Name="forgetPassword" Content="שכחתי סיסמה" HorizontalAlignment="Left" Margin="456,319,0,0" VerticalAlignment="Top" Height="26" Width="80" BorderBrush="{x:Null}" Foreground="Red" Background="{x:Null}"/>
+        <Label x:Name="error" Content="שם המשתמש או הסיסמה שגויים" HorizontalAlignment="Left" Margin="322,218,0,0" VerticalAlignment="Top" Width="214" Foreground="Red" FlowDirection="RightToLeft" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Visibility="Hidden"/>
 
     </Grid>
 </Window>
