@@ -17,8 +17,8 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Label Content="בס&quot;ד" HorizontalAlignment="Left" Margin="752,10,0,0" VerticalAlignment="Top"/>
-        <Grid Margin="200,50,200,293" Width="400">
-            <Label  Content="משתמש חדש"  FontSize="40" FontFamily="BN 88 Fingers" HorizontalAlignment="Center"/>
+        <Grid Margin="200,46,200,297" Width="400">
+            <Label  Content="משתמש חדש"  FontSize="40" FontFamily="BN 88 Fingers" HorizontalAlignment="Center" Margin="0,-1,0,36"/>
         </Grid>
         <TextBox x:Name="name" HorizontalAlignment="Center" Margin="0,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="40" TextAlignment="Right" FontSize="26"/>
         <TextBox x:Name="id" HorizontalAlignment="Center" Margin="0,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="40" TextAlignment="Right" FontSize="26"/>

@@ -47,11 +47,14 @@ namespace ClassLibrary
 
         public async Task<BsonDocument> getEmployeeDetailsDocByName()
         {
-            mongoConection = new mongoConection("HadafHashvui");
-            var user = await Task.FromResult(mongoConection.getCollectionByName("user")).Result;
-            var filter = Builders<BsonDocument>.Filter.Eq("userName", this.username);
+       
+              mongoConection = new mongoConection("HadafHashvui");
+            var user = await mongoConection.getCollectionByName("user");
+            var filter = Builders<BsonDocument>.Filter.Eq("username", this.username) & Builders<BsonDocument>.Filter.Eq("password", this.password);
 
-            return await user.Find(filter).FirstOrDefaultAsync();
+
+             return await user.Find(filter).FirstOrDefaultAsync();
+
         }
 
         public async Task setNewDocument()
@@ -64,7 +67,7 @@ namespace ClassLibrary
                 {"password", this.GetPassword()}
             };
             mongoConection mongo = new mongoConection("HadafHashvui");
-            await mongo.addDoc(doc, "user");
+            await mongo.addNewDoctoCollection("user", doc);
         }
 
     }
